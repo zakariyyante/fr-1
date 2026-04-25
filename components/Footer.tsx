@@ -14,7 +14,7 @@ export default function Footer() {
         borderTop: "1px solid rgba(201,168,76,0.15)",
       }}
     >
-      {/* Jouez Responsable Strip */}
+      {/* Logos strip */}
       <div
         className="py-4 px-4"
         style={{
@@ -23,65 +23,46 @@ export default function Footer() {
         }}
       >
         <div className="max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-4 md:gap-8">
-          <span className="text-xs font-bold uppercase tracking-widest" style={{ color: "#c9a84c" }}>
-            Jouez Responsable
-          </span>
           <Image
-            src="/18plus.png"
-            alt="18+ uniquement"
+            src="/18+.jpg"
+            alt="18+"
             width={36}
             height={36}
             className="object-contain opacity-80"
             unoptimized
           />
-          <a
-            href="https://www.gambleaware.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="opacity-80 hover:opacity-100 transition-opacity"
-            aria-label="BeGambleAware"
-          >
-            <Image
-              src="/gambleaware.png"
-              alt="BeGambleAware"
-              width={120}
-              height={36}
-              className="object-contain"
-              unoptimized
-            />
-          </a>
-          <a
-            href="https://www.gamcare.org.uk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="opacity-80 hover:opacity-100 transition-opacity"
-            aria-label="GamCare"
-          >
-            <Image
-              src="/gamcare.png"
-              alt="GamCare"
-              width={90}
-              height={36}
-              className="object-contain"
-              unoptimized
-            />
-          </a>
-          <a
-            href="https://www.gamstop.co.uk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="opacity-80 hover:opacity-100 transition-opacity"
-            aria-label="GamStop"
-          >
-            <Image
-              src="/gamestop.png"
-              alt="GamStop"
-              width={80}
-              height={36}
-              className="object-contain"
-              unoptimized
-            />
-          </a>
+          <Image
+            src="/GambleAware.webp"
+            alt="GambleAware"
+            width={120}
+            height={36}
+            className="object-contain opacity-80"
+            unoptimized
+          />
+          <Image
+            src="/GamCare.svg"
+            alt="GamCare"
+            width={90}
+            height={36}
+            className="object-contain opacity-80"
+            unoptimized
+          />
+          <Image
+            src="/gordonmoody.png"
+            alt="Gordon Moody"
+            width={80}
+            height={36}
+            className="object-contain opacity-80"
+            unoptimized
+          />
+          <Image
+            src="/anj_logo.png"
+            alt="ANJ"
+            width={60}
+            height={36}
+            className="object-contain opacity-80"
+            unoptimized
+          />
         </div>
       </div>
 
@@ -101,8 +82,8 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               {[
-                { href: "#casinos", label: "Top Casinos" },
-                { href: "#comment-nous-classons", label: "Notre Méthode" },
+                { href: "#plateformes", label: "Top Plateformes" },
+                { href: "#notre-methode", label: "Notre Méthode" },
               ].map(({ href, label }) => (
                 <li key={href}>
                   <a
@@ -143,6 +124,15 @@ export default function Footer() {
                   Conditions d&apos;Utilisation
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-xs transition-colors"
+                  style={{ color: "rgba(232,232,240,0.5)" }}
+                >
+                  Nous Contacter
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -152,27 +142,10 @@ export default function Footer() {
               Avertissement
             </h4>
             <p className="text-xs leading-relaxed" style={{ color: "rgba(232,232,240,0.4)" }}>
-              Top Casinos FR est un site de comparaison indépendant. Nous pouvons recevoir une commission
-              des casinos listés. Toutes les offres sont soumises aux conditions générales. Le jeu implique
-              des risques — ne jouez qu&apos;avec de l&apos;argent que vous pouvez vous permettre de perdre.
-              Ligne d&apos;aide nationale jeu :{" "}
-              <a
-                href="tel:0974751513"
-                style={{ color: "#c9a84c" }}
-                className="hover:underline"
-              >
-                09 74 75 13 13
-              </a>{" "}
-              (gratuit, 24h/24). Pour de l&apos;aide visitez{" "}
-              <a
-                href="https://www.joueurs-info-service.fr"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: "#c9a84c" }}
-                className="hover:underline"
-              >
-                joueurs-info-service.fr
-              </a>.
+              Top Plateformes FR est un site de comparaison indépendant à titre informatif. Nous pouvons
+              percevoir une commission des plateformes référencées. Toutes les offres sont soumises aux
+              conditions générales d&apos;utilisation de chaque plateforme. Nous vous encourageons à lire
+              attentivement les CGU avant toute inscription.
             </p>
           </div>
         </div>
@@ -180,7 +153,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="section-divider mb-6" />
         <p className="text-center text-xs" style={{ color: "rgba(232,232,240,0.3)" }}>
-          © {year} topcasinosfr.com. À titre informatif uniquement. Tous droits réservés.
+          © {year} topfrplateformes.com. À titre informatif uniquement. Tous droits réservés.
         </p>
       </div>
     </footer>

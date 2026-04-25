@@ -6,8 +6,9 @@ import Logo from "./Logo";
 import Link from "next/link";
 
 const navLinks = [
-  { href: "#casinos", label: "Top Casinos" },
-  { href: "#comment-nous-classons", label: "Notre Méthode" },
+  { href: "#plateformes", label: "Top Plateformes" },
+  { href: "#notre-methode", label: "Notre Méthode" },
+  { href: "/contact", label: "Contact" },
   { href: "/privacy", label: "Confidentialité" },
   { href: "/terms", label: "CGU" },
 ];
@@ -27,7 +28,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" aria-label="Top Casinos FR Accueil">
+          <Link href="/" aria-label="Top Plateformes FR Accueil">
             <Logo />
           </Link>
 
@@ -53,10 +54,10 @@ export default function Header() {
 
           {/* CTA button */}
           <a
-            href="#casinos"
+            href="#plateformes"
             className="hidden md:inline-flex btn-gold items-center px-5 py-2 rounded-full text-sm font-bold text-gray-900 uppercase tracking-wide"
           >
-            Voir les Casinos
+            Voir les Plateformes
           </a>
 
           {/* Mobile hamburger */}
@@ -99,11 +100,11 @@ export default function Header() {
               </a>
             ))}
             <a
-              href="#casinos"
+              href="#plateformes"
               className="btn-gold mt-2 block text-center px-5 py-3 rounded-full text-sm font-bold text-gray-900 uppercase tracking-wide"
               onClick={() => setIsOpen(false)}
             >
-              Voir les Casinos
+              Voir les Plateformes
             </a>
           </nav>
         </div>

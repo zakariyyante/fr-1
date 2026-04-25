@@ -24,13 +24,13 @@ function ModalContent() {
         <div className="text-center mb-8">
           <div className="badge-pill mx-auto mb-4" style={{ display: "inline-flex" }}>
             <span>📱</span>
-            <span>Offres Casinos Mobile</span>
+            <span>Offres Plateformes Mobile</span>
           </div>
           <h1 className="text-3xl font-black text-white mb-2">
-            Top <span className="gold-text">Casinos Mobile</span>
+            Top <span className="gold-text">Plateformes Mobile</span>
           </h1>
           <p className="text-sm" style={{ color: "rgba(232,232,240,0.5)" }}>
-            Offres exclusives pour joueurs mobiles — Licenciés ANJ
+            Sélection exclusive de plateformes optimisées pour mobile
           </p>
         </div>
 
@@ -48,7 +48,7 @@ function ModalContent() {
         </div>
 
         <p className="text-center text-xs mt-8" style={{ color: "rgba(232,232,240,0.3)" }}>
-          Nouveaux clients uniquement. 18+. CGU applicables. Jouez responsablement. JouezResponsable.fr
+          Sous réserve des conditions générales d&apos;utilisation de chaque plateforme.
         </p>
       </main>
 

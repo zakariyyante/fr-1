@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Politique de Confidentialité – Top Casinos FR",
+  title: "Politique de Confidentialité – Top Plateformes FR",
   description:
-    "Politique de confidentialité de topcasinosfr.com – comment nous collectons, utilisons et protégeons vos données.",
+    "Politique de confidentialité de topfrplateformes.com – comment nous collectons, utilisons et protégeons vos données.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -38,8 +38,8 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-xl font-bold text-white mb-3">1. Introduction</h2>
               <p>
-                Top Casinos FR (&ldquo;nous&rdquo;, &ldquo;notre&rdquo;) exploite le site web{" "}
-                <strong>topcasinosfr.com</strong>. Cette politique de confidentialité explique comment nous
+                Top Plateformes FR (&ldquo;nous&rdquo;, &ldquo;notre&rdquo;) exploite le site web{" "}
+                <strong>topfrplateformes.com</strong>. Cette politique de confidentialité explique comment nous
                 collectons, utilisons, divulguons et protégeons vos informations lorsque vous visitez notre site.
               </p>
             </section>
@@ -78,7 +78,7 @@ export default function PrivacyPage() {
               <p>
                 Nous utilisons des cookies pour stocker les préférences et collecter des données analytiques.
                 Vous pouvez configurer votre navigateur pour refuser les cookies ; cela peut cependant affecter
-                les fonctionnalités du site. Les opérateurs de casino tiers sur lesquels vous cliquez peuvent
+                les fonctionnalités du site. Les plateformes tierces sur lesquelles vous cliquez peuvent
                 définir leurs propres cookies conformément à leurs politiques de confidentialité.
               </p>
             </section>
@@ -86,9 +86,9 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-xl font-bold text-white mb-3">5. Liens vers des tiers</h2>
               <p>
-                Notre site contient des liens vers des sites web tiers (opérateurs de casino). Nous ne sommes pas
-                responsables des pratiques de confidentialité de ces sites. Nous vous encourageons à lire les
-                politiques de confidentialité de tout site tiers que vous visitez.
+                Notre site contient des liens vers des sites web tiers. Nous ne sommes pas responsables des
+                pratiques de confidentialité de ces sites. Nous vous encourageons à lire les politiques de
+                confidentialité de tout site tiers que vous visitez.
               </p>
             </section>
 
@@ -120,8 +120,7 @@ export default function PrivacyPage() {
               <h2 className="text-xl font-bold text-white mb-3">8. Modifications de cette politique</h2>
               <p>
                 Nous pouvons mettre à jour cette politique de confidentialité périodiquement. Les modifications
-                sont effectives immédiatement après leur publication. La date de &ldquo;dernière mise à
-                jour&rdquo; en haut de cette page sera révisée.
+                sont effectives immédiatement après leur publication.
               </p>
             </section>
 
@@ -129,7 +128,7 @@ export default function PrivacyPage() {
               <h2 className="text-xl font-bold text-white mb-3">9. Contact</h2>
               <p>
                 Pour toute question concernant cette politique de confidentialité, contactez-nous via le site{" "}
-                <strong>topcasinosfr.com</strong>.
+                <strong>topfrplateformes.com</strong>.
               </p>
             </section>
           </div>

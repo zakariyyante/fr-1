@@ -3,20 +3,20 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://topcasinosfr.com"),
-  title: "Top Casinos FR - Meilleurs Casinos en Ligne France 2026",
+  metadataBase: new URL("https://topfrplateformes.com"),
+  title: "Top Plateformes FR - Meilleures Plateformes en Ligne France 2026",
   description:
-    "Comparez les meilleurs casinos en ligne en France pour 2026. Revus indépendamment, licenciés ANJ. Trouvez des bonus exclusifs, tours gratuits et les meilleurs sites de casino.",
+    "Comparatif indépendant des meilleures plateformes en ligne en France pour 2026. Revues et classées selon leur fiabilité, leurs services et l'expérience utilisateur.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
-    url: "https://topcasinosfr.com",
-    siteName: "Top Casinos FR",
-    title: "Top Casinos FR - Meilleurs Casinos en Ligne France 2026",
+    url: "https://topfrplateformes.com",
+    siteName: "Top Plateformes FR",
+    title: "Top Plateformes FR - Meilleures Plateformes en Ligne France 2026",
     description:
-      "Comparez les meilleurs casinos en ligne en France pour 2026. Revus indépendamment, licenciés ANJ. Trouvez des bonus exclusifs, tours gratuits et les meilleurs sites de casino.",
+      "Comparatif indépendant des meilleures plateformes en ligne en France pour 2026. Revues et classées selon leur fiabilité, leurs services et l'expérience utilisateur.",
   },
 };
 
