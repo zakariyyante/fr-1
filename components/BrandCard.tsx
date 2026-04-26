@@ -210,8 +210,11 @@ export default function BrandCard({ brand, isOnline = true, rank }: BrandCardPro
         </button>
 
         {/* T&Cs */}
-        <p className="text-center" style={{ fontSize: "0.65rem", color: "rgba(232,232,240,0.22)", letterSpacing: "0.02em" }}>
-          Sous réserve des conditions générales d&apos;utilisation.
+        <p className="text-center" style={{ fontSize: "0.65rem", color: "rgba(232,232,240,0.35)", letterSpacing: "0.02em", lineHeight: 1.5 }}>
+          Jouer comporte des risques : endettement, isolement, dépendance.{" "}
+          Appelez le{" "}
+          <a href="tel:0974751313" style={{ color: "#c9a84c" }}>09 74 75 13 13</a>
+          {" "}(appel non surtaxé).
         </p>
       </div>
     </a>

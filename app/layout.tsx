@@ -35,9 +35,50 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>
+      <body style={{ paddingBottom: "56px" }}>
         {children}
         <Analytics />
+
+        {/* ── MANDATORY FRENCH GAMBLING WARNING (ANJ / Google Ads compliance) ── */}
+        <div
+          style={{
+            position: "fixed",
+            bottom: 0,
+            left: 0,
+            right: 0,
+            zIndex: 9999,
+            background: "#0a0a0a",
+            borderTop: "2px solid #c9a84c",
+            padding: "10px 16px",
+            textAlign: "center",
+          }}
+        >
+          <p style={{
+            margin: 0,
+            fontSize: "0.72rem",
+            lineHeight: 1.5,
+            color: "rgba(255,255,255,0.85)",
+            fontFamily: "Inter, sans-serif",
+          }}>
+            <strong style={{ color: "#f5d27a" }}>⚠️ Avertissement :</strong>{" "}
+            Jouer comporte des risques&nbsp;: endettement, isolement, dépendance. Pour être aidé, appelez le{" "}
+            <a
+              href="tel:0974751313"
+              style={{ color: "#f5d27a", fontWeight: 700, textDecoration: "none" }}
+            >
+              09 74 75 13 13
+            </a>{" "}
+            (appel non surtaxé) —{" "}
+            <a
+              href="https://www.joueurs-info-service.fr"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#f5d27a", fontWeight: 600, textDecoration: "underline" }}
+            >
+              joueurs-info-service.fr
+            </a>
+          </p>
+        </div>
       </body>
     </html>
   );

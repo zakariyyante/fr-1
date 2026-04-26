@@ -104,6 +104,15 @@ export default function HomePage() {
               Divulgation : Top Plateformes FR peut percevoir une commission des plateformes référencées. Les
               classements sont éditorialement indépendants et basés sur des critères objectifs. Les offres sont
               soumises aux conditions générales de chaque plateforme.
+              <br />
+              <span style={{ color: "rgba(245,210,122,0.7)", fontWeight: 600 }}>
+                ⚠️ Jouer comporte des risques : endettement, isolement, dépendance. Pour être aidé, appelez le{" "}
+                <a href="tel:0974751313" style={{ color: "#f5d27a" }}>09 74 75 13 13</a>
+                {" "}(appel non surtaxé) —{" "}
+                <a href="https://www.joueurs-info-service.fr" target="_blank" rel="noopener noreferrer" style={{ color: "#f5d27a" }}>
+                  joueurs-info-service.fr
+                </a>
+              </span>
             </div>
           </div>
         </section>

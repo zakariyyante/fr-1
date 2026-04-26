@@ -142,11 +142,23 @@ export default function Footer() {
               Avertissement
             </h4>
             <p className="text-xs leading-relaxed" style={{ color: "rgba(232,232,240,0.4)" }}>
-              Top Plateformes FR est un site de comparaison indépendant à titre informatif. Nous pouvons
-              percevoir une commission des plateformes référencées. Toutes les offres sont soumises aux
-              conditions générales d&apos;utilisation de chaque plateforme. Nous vous encourageons à lire
-              attentivement les CGU avant toute inscription.
-            </p>
+                Top Plateformes FR est un site de comparaison indépendant à titre informatif. Nous pouvons
+                percevoir une commission des plateformes référencées. Toutes les offres sont soumises aux
+                conditions générales d&apos;utilisation de chaque plateforme.
+                <br /><br />
+                <strong style={{ color: "rgba(245,210,122,0.8)" }}>
+                  ⚠️ Jouer comporte des risques : endettement, isolement, dépendance.
+                </strong>{" "}
+                Pour être aidé, appelez le{" "}
+                <a href="tel:0974751313" style={{ color: "#c9a84c" }} className="hover:underline">
+                  09 74 75 13 13
+                </a>{" "}
+                (appel non surtaxé) —{" "}
+                <a href="https://www.joueurs-info-service.fr" target="_blank" rel="noopener noreferrer"
+                  style={{ color: "#c9a84c" }} className="hover:underline">
+                  joueurs-info-service.fr
+                </a>
+              </p>
           </div>
         </div>
 
