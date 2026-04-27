@@ -1,12 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import Header from "@/components/Header";
 import BrandCard from "@/components/BrandCard";
 import Footer from "@/components/Footer";
 import MobileBrandModal from "@/components/MobileBrandModal";
-import Logo from "@/components/Logo";
-import Link from "next/link";
 import { regularBrands } from "@/data/brands";
 
 const YEAR = new Date().getFullYear();
@@ -207,105 +204,8 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── FOOTER (inline) ─────────────────────────────── */}
-        <footer
-          style={{
-            background: "linear-gradient(180deg, #060612 0%, #030308 100%)",
-            borderTop: "1px solid rgba(201,168,76,0.15)",
-          }}
-        >
-          {/* Logos strip */}
-          <div
-            className="py-4 px-4"
-            style={{
-              background: "rgba(201,168,76,0.06)",
-              borderBottom: "1px solid rgba(201,168,76,0.1)",
-            }}
-          >
-            <div className="max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-6 md:gap-10">
-              <Image src="/18+.jpg" alt="18+ uniquement" width={40} height={40} className="object-contain opacity-85" unoptimized />
-              <a href="https://www.gambleaware.org" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 transition-opacity" aria-label="GambleAware">
-                <Image src="/GambleAware.webp" alt="GambleAware" width={130} height={40} className="object-contain" unoptimized />
-              </a>
-              <a href="https://www.joueurs-info-service.fr" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 transition-opacity" aria-label="Joueurs Info Service">
-                <Image src="/joueurs-info-service.png" alt="Joueurs Info Service" width={110} height={40} className="object-contain" unoptimized />
-              </a>
-              <a href="https://anj.fr" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 transition-opacity" aria-label="ANJ">
-                <Image src="/anj.png" alt="ANJ – Autorité Nationale des Jeux" width={70} height={40} className="object-contain" unoptimized />
-              </a>
-              <a href="https://mediateurdesjeuxenligne.fr" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 transition-opacity" aria-label="Médiateur des jeux en ligne">
-                <Image src="/mediateurdesjeux.png" alt="Médiateur des jeux en ligne" width={110} height={40} className="object-contain" unoptimized />
-              </a>
-            </div>
-          </div>
-
-          {/* Main footer content */}
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
-            <div className="flex justify-center mb-8">
-              <Logo />
-            </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-              <div>
-                <h4 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: "#c9a84c" }}>
-                  Liens Rapides
-                </h4>
-                <ul className="space-y-2">
-                  <li>
-                    <a href="#plateformes" className="text-xs" style={{ color: "rgba(232,232,240,0.5)" }}>
-                      Top Plateformes
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#notre-methode" className="text-xs" style={{ color: "rgba(232,232,240,0.5)" }}>
-                      Notre Méthode
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h4 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: "#c9a84c" }}>
-                  Légal
-                </h4>
-                <ul className="space-y-2">
-                  <li>
-                    <Link href="/privacy" className="text-xs" style={{ color: "rgba(232,232,240,0.5)" }}>
-                      Politique de Confidentialité
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/terms" className="text-xs" style={{ color: "rgba(232,232,240,0.5)" }}>
-                      Conditions d&apos;Utilisation
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/contact" className="text-xs" style={{ color: "rgba(232,232,240,0.5)" }}>
-                      Nous Contacter
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="col-span-2">
-                <h4 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: "#c9a84c" }}>
-                  Avertissement
-                </h4>
-                <p className="text-xs leading-relaxed" style={{ color: "rgba(232,232,240,0.4)" }}>
-                  Top Plateformes FR est un site de comparaison indépendant. Nous pouvons percevoir une commission
-                  des plateformes référencées. Toutes les offres sont soumises aux conditions générales
-                  d&apos;utilisation de chaque service. Ce site est fourni à titre informatif uniquement.
-                </p>
-              </div>
-            </div>
-
-            <div className="section-divider mb-6" />
-            <p className="text-center text-xs" style={{ color: "rgba(232,232,240,0.3)" }}>
-              © {YEAR} topfrplateformes.com. À titre informatif uniquement. Tous droits réservés.
-            </p>
-          </div>
-        </footer>
       </main>
+      <Footer />
     </>
   );
 }
