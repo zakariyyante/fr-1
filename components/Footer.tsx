@@ -14,55 +14,64 @@ export default function Footer() {
         borderTop: "1px solid rgba(201,168,76,0.15)",
       }}
     >
-      {/* Logos strip */}
+      {/* Responsible gambling logos strip */}
       <div
-        className="py-4 px-4"
+        className="py-5 px-4"
         style={{
           background: "rgba(201,168,76,0.06)",
           borderBottom: "1px solid rgba(201,168,76,0.1)",
         }}
       >
-        <div className="max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-4 md:gap-8">
+        <div className="max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-6 md:gap-10">
+          {/* 18+ badge */}
           <Image
             src="/18+.jpg"
-            alt="18+"
-            width={36}
-            height={36}
-            className="object-contain opacity-80"
+            alt="18+ uniquement"
+            width={40}
+            height={40}
+            className="object-contain opacity-85"
             unoptimized
           />
-          <Image
-            src="/GambleAware.webp"
-            alt="GambleAware"
-            width={120}
-            height={36}
-            className="object-contain opacity-80"
-            unoptimized
-          />
-          <Image
-            src="/GamCare.svg"
-            alt="GamCare"
-            width={90}
-            height={36}
-            className="object-contain opacity-80"
-            unoptimized
-          />
-          <Image
-            src="/gordonmoody.png"
-            alt="Gordon Moody"
-            width={80}
-            height={36}
-            className="object-contain opacity-80"
-            unoptimized
-          />
-          <Image
-            src="/anj_logo.png"
-            alt="ANJ"
-            width={60}
-            height={36}
-            className="object-contain opacity-80"
-            unoptimized
-          />
+          {/* GambleAware */}
+          <a
+            href="https://www.gambleaware.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="opacity-80 hover:opacity-100 transition-opacity"
+            aria-label="GambleAware"
+          >
+            <Image src="/GambleAware.webp" alt="GambleAware" width={130} height={40} className="object-contain" unoptimized />
+          </a>
+          {/* Joueurs Info Service */}
+          <a
+            href="https://www.joueurs-info-service.fr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="opacity-80 hover:opacity-100 transition-opacity"
+            aria-label="Joueurs Info Service"
+          >
+            <Image src="/joueurs-info-service.png" alt="Joueurs Info Service" width={110} height={40} className="object-contain" unoptimized />
+          </a>
+          {/* ANJ */}
+          <a
+            href="https://anj.fr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="opacity-80 hover:opacity-100 transition-opacity"
+            aria-label="Autorité Nationale des Jeux"
+          >
+            <Image src="/anj.png" alt="ANJ – Autorité Nationale des Jeux" width={70} height={40} className="object-contain" unoptimized />
+          </a>
+          {/* Médiateur des jeux en ligne */}
+          <a
+            href="https://mediateurdesjeuxenligne.fr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="opacity-80 hover:opacity-100 transition-opacity"
+            aria-label="Médiateur des jeux en ligne"
+          >
+            <Image src="/mediateurdesjeux.png" alt="Médiateur des jeux en ligne" width={110} height={40} className="object-contain" unoptimized />
+          </a>
         </div>
       </div>
 
