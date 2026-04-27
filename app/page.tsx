@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import BrandCard from "@/components/BrandCard";
 import Footer from "@/components/Footer";
 import MobileBrandModal from "@/components/MobileBrandModal";
+import HeroBackground from "@/components/HeroBackground";
 import { regularBrands } from "@/data/brands";
 
 const YEAR = new Date().getFullYear();
@@ -19,6 +20,7 @@ export default function HomePage() {
       <main>
         {/* ── HERO ─────────────────────────────────────────── */}
         <section className="hero-bg relative overflow-hidden py-20 md:py-28 px-4">
+          <HeroBackground />
           <div className="relative z-10 max-w-3xl mx-auto text-center">
             {/* Badge pill */}
             <div className="badge-pill mx-auto mb-6 inline-flex">

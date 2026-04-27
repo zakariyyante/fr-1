@@ -1,56 +1,62 @@
 export default function Logo({ className = "" }: { className?: string }) {
   return (
     <div className={`flex items-center gap-3 ${className}`}>
-      {/* Crown icon in rounded-square */}
+      {/* Icon: Award/podium mark in rounded square */}
       <svg
-        width="42"
-        height="42"
-        viewBox="0 0 42 42"
+        width="44"
+        height="44"
+        viewBox="0 0 44 44"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
         className="logo-icon flex-shrink-0"
       >
         <defs>
-          <linearGradient id="logo-bg" x1="0" y1="0" x2="42" y2="42" gradientUnits="userSpaceOnUse">
-            <stop offset="0%" stopColor="#1a1840" />
-            <stop offset="100%" stopColor="#0b0a1e" />
+          <linearGradient id="lb" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stopColor="#1e1a42" />
+            <stop offset="100%" stopColor="#0b0920" />
           </linearGradient>
-          <linearGradient id="logo-border" x1="0" y1="0" x2="42" y2="42" gradientUnits="userSpaceOnUse">
+          <linearGradient id="lborder" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
             <stop offset="0%" stopColor="#c9a84c" />
-            <stop offset="50%" stopColor="#f5d27a" />
+            <stop offset="50%" stopColor="#8b5cf6" />
             <stop offset="100%" stopColor="#c9a84c" />
           </linearGradient>
-          <linearGradient id="logo-crown" x1="6" y1="10" x2="36" y2="34" gradientUnits="userSpaceOnUse">
-            <stop offset="0%" stopColor="#f5d27a" />
-            <stop offset="50%" stopColor="#c9a84c" />
-            <stop offset="100%" stopColor="#e8c060" />
+          <linearGradient id="lgold" x1="8" y1="32" x2="36" y2="8" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stopColor="#c9a84c" />
+            <stop offset="50%" stopColor="#f5d27a" />
+            <stop offset="100%" stopColor="#fef3c7" />
           </linearGradient>
-          <linearGradient id="logo-jewel" x1="0" y1="0" x2="0" y2="1" gradientUnits="userSpaceOnUse">
-            <stop offset="0%" stopColor="#fef3c7" />
-            <stop offset="100%" stopColor="#f5d27a" />
+          <linearGradient id="lpurp" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stopColor="#a78bfa" stopOpacity="0.9" />
+            <stop offset="100%" stopColor="#7c3aed" stopOpacity="0.6" />
           </linearGradient>
+          <filter id="lglow">
+            <feGaussianBlur stdDeviation="1.5" result="blur" />
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
         </defs>
 
-        {/* Background rounded square */}
-        <rect x="1.5" y="1.5" width="39" height="39" rx="11" fill="url(#logo-bg)" stroke="url(#logo-border)" strokeWidth="1.5" />
+        {/* Background */}
+        <rect x="1.5" y="1.5" width="41" height="41" rx="12" fill="url(#lb)" stroke="url(#lborder)" strokeWidth="1.5"/>
+        <rect x="3" y="3" width="38" height="38" rx="10.5" fill="none" stroke="rgba(255,255,255,0.05)" strokeWidth="1"/>
 
-        {/* Subtle inner glow */}
-        <rect x="3" y="3" width="36" height="36" rx="9.5" fill="none" stroke="rgba(255,255,255,0.04)" strokeWidth="1" />
+        {/* Podium bars — 2nd place left, 1st center (tallest), 3rd right */}
+        {/* Bar 2 (left) */}
+        <rect x="8" y="22" width="7" height="12" rx="2" fill="url(#lpurp)" />
+        {/* Bar 1 (center, tallest) */}
+        <rect x="18.5" y="14" width="7" height="20" rx="2" fill="url(#lgold)" filter="url(#lglow)" />
+        {/* Bar 3 (right) */}
+        <rect x="29" y="25" width="7" height="9" rx="2" fill="url(#lpurp)" opacity="0.7" />
 
-        {/* Crown body — left slope */}
-        <path
-          d="M 8 30 L 8 18 L 14.5 23.5 L 21 11 L 27.5 23.5 L 34 18 L 34 30 Z"
-          fill="url(#logo-crown)"
+        {/* Star on top of bar 1 */}
+        <polygon
+          points="22,9 23.2,12.2 26.5,12.2 23.9,14.1 24.8,17.3 22,15.5 19.2,17.3 20.1,14.1 17.5,12.2 20.8,12.2"
+          fill="url(#lgold)"
+          filter="url(#lglow)"
         />
 
-        {/* Crown base bar */}
-        <rect x="7" y="30" width="28" height="4.5" rx="2" fill="url(#logo-crown)" />
-
-        {/* Jewel dots on crown points */}
-        <circle cx="8"  cy="18" r="2.2" fill="url(#logo-jewel)" />
-        <circle cx="21" cy="11" r="2.5" fill="url(#logo-jewel)" />
-        <circle cx="34" cy="18" r="2.2" fill="url(#logo-jewel)" />
+        {/* Thin base line */}
+        <rect x="7" y="34" width="30" height="1.5" rx="0.75" fill="url(#lgold)" opacity="0.4" />
       </svg>
 
       {/* Wordmark */}
@@ -71,7 +77,7 @@ export default function Logo({ className = "" }: { className?: string }) {
         </div>
         <span
           className="font-semibold tracking-widest uppercase"
-          style={{ fontSize: "0.6rem", color: "rgba(232,232,240,0.5)", letterSpacing: "0.15em" }}
+          style={{ fontSize: "0.6rem", color: "rgba(232,232,240,0.45)", letterSpacing: "0.15em" }}
         >
           Plateformes
         </span>
